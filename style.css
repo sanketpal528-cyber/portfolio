@@ -203,3 +203,144 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
   .about-cards{grid-template-columns:1fr}
   .b1,.b2,.b3,.b4{display:none}
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   BINARY THEME OVERRIDES
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Dark binary bg — canvas needs full black base */
+body { background: #0a0a0f; }
+#bgCanvas { opacity: 1; }
+
+/* Subtle green tint on primary accent */
+:root {
+  --primary:       #00d4ff;
+  --primary-dark:  #0099cc;
+  --primary-light: #66e5ff;
+}
+
+/* Nav brand in matrix green */
+.nav-brand { color: #00ff41; }
+.brand-bracket { color: #00d4ff; }
+.brand-dot     { color: #00ff41; }
+
+/* Hero name gradient: matrix green → cyan */
+.hero-name { color: #fff; }
+.gradient-text {
+  background: linear-gradient(135deg, #00ff41, #00d4ff, #a89cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Role typing in matrix green */
+.role-typing { color: #00ff41; font-family: 'Courier New', monospace; }
+.cursor      { color: #00ff41; }
+
+/* Hero tag */
+.hero-tag {
+  background: rgba(0,255,65,0.1);
+  border-color: rgba(0,255,65,0.3);
+  color: #00ff41;
+}
+
+/* Stats numbers */
+.hstat-num {
+  background: linear-gradient(135deg, #00ff41, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Avatar ring colors */
+.ring1 { border-color: rgba(0,255,65,0.3); }
+.ring2 { border-color: rgba(0,212,255,0.2); }
+.ring3 { border-color: rgba(168,156,255,0.1); }
+.hero-avatar img { border-color: #00ff41; box-shadow: 0 0 40px rgba(0,255,65,0.4); }
+
+/* Floating badges */
+.floating-badge {
+  background: rgba(0,0,0,0.6);
+  border-color: rgba(0,255,65,0.25);
+  color: #00ff41;
+  font-family: 'Courier New', monospace;
+}
+
+/* Section tag */
+.section-tag { color: #00ff41; }
+
+/* Section heading gradient */
+.section-header h2 {
+  background: linear-gradient(135deg, #fff 40%, #00ff41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Cards — matrix border glow */
+.card, .about-card, .project-card, .skill-cat, .contact-item, .contact-form {
+  border-color: rgba(0,255,65,0.1);
+}
+
+.about-card:hover,
+.skill-cat:hover,
+.contact-item:hover,
+.project-card:hover {
+  border-color: rgba(0,255,65,0.3);
+  box-shadow: 0 0 30px rgba(0,255,65,0.15);
+}
+
+/* Skill pills */
+.skill-pill { font-family: 'Courier New', monospace; }
+
+/* Skill bars */
+.sb-fill { box-shadow: 0 0 10px var(--color, #00ff41); }
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  box-shadow: 0 4px 20px rgba(0,212,255,0.4);
+}
+.btn-primary:hover { box-shadow: 0 0 30px rgba(0,255,65,0.6); }
+
+.btn-outline {
+  color: #00ff41;
+  border-color: #00ff41;
+}
+.btn-outline:hover { background: rgba(0,255,65,0.1); box-shadow: 0 0 20px rgba(0,255,65,0.3); }
+
+/* Project card tags */
+.pc-tags span {
+  background: rgba(0,255,65,0.08);
+  color: #00ff41;
+  border-color: rgba(0,255,65,0.2);
+  font-family: 'Courier New', monospace;
+}
+
+/* Contact icons */
+.ci-icon { background: linear-gradient(135deg, #00d4ff, #0099cc); }
+
+/* Form focus */
+.form-group input:focus, .form-group textarea:focus {
+  border-color: #00ff41;
+  box-shadow: 0 0 0 3px rgba(0,255,65,0.12);
+}
+
+/* Footer */
+.footer-brand .brand-bracket { color: #00d4ff; }
+.footer-brand .brand-dot     { color: #00ff41; }
+.footer-links a:hover        { color: #00ff41; }
+
+/* Loader */
+.loader-logo {
+  background: linear-gradient(135deg, #00ff41, #00d4ff);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+}
+.loader-fill { background: linear-gradient(90deg, #00ff41, #00d4ff); }
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb { background: #00ff41; }
+
+/* Glowing text selection */
+::selection { background: rgba(0,255,65,0.2); color: #fff; }
